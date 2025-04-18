@@ -29,5 +29,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('restaurante.urls')),
+    path('', include('restaurante.urls')), # toma url en la app (restaurante) en la raiz
 ]

@@ -30,9 +30,9 @@ $ cd proyecto
 $ python3 -m venv .venv
 $ source .venv/bin/activate
 
-3. Ejecutá las migraciones:
-$ python manage.py makemigrations 
-$ python manage.py migrate
+3. Ejecutá las migraciones (especialmente para actualizar el modelo de base de datos a partir de los models.py):
+$ python manage.py makemigrations # define, crea los scripts
+$ python manage.py migrate # implementa
 
 3. Iniciar el servidor:
 python manage.py runserver

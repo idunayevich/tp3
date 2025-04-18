@@ -16,9 +16,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.home, name="home"),
-    path("persona/", views.agregar_persona, name="persona"),
-    path("restaurante/", views.agregar_restaurante, name="restaurante"),
-    path("reserva/", views.agregar_reserva, name="reserva"),
-    path("buscar/", views.buscar_persona, name="buscar"),
+    path("", views.home, name="home"), # URL para la vista de inicio
+    path("persona/", views.agregar_persona, name="persona"), # URL para la vista de agregar persona
+    path("restaurante/", views.agregar_restaurante, name="restaurante"), # URL para la vista de agregar restaurante
+    path("reserva/", views.agregar_reserva, name="reserva"), # URL para la vista de agregar reserva
+    path("buscar/", views.buscar_persona, name="buscar"),   # URL para la vista de buscar persona
 ]
