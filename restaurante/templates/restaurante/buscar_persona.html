@@ -1,0 +1,15 @@
+{% extends "restaurante/base.html" %}
+{% block content %}
+<h2>Buscar Persona</h2>
+<form method="get">
+    Nombre: <input type="text" name="buscar">
+    <button type="submit">Buscar</button>
+</form>
+<ul>
+    {% for persona in personas %}
+    <li>{{ persona.nombre }} {{ persona.apellido }} - {{ persona.telefono }}</li>
+    {% empty %}
+    <li>No se encontraron personas.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

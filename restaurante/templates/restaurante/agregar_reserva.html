@@ -1,0 +1,11 @@
+{% extends "restaurante/base.html" %}
+{% block content %}
+<h2>Agregar Reserva</h2>
+<form method="post">
+    {% csrf_token %}
+    Día: <input type="date" name="dia"><br>
+    Hora: <input type="time" name="hora"><br>
+    Cantidad de personas: <input type="number" name="cant_personas"><br>
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}

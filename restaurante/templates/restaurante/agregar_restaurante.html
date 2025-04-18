@@ -1,0 +1,10 @@
+{% extends "restaurante/base.html" %}
+{% block content %}
+<h2>Agregar Restaurante</h2>
+<form method="post">
+    {% csrf_token %}
+    Nombre: <input type="text" name="nombre"><br>
+    Tipo de comida: <input type="text" name="tipo_comida"><br>
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}

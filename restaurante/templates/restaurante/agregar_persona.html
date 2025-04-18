@@ -1,0 +1,11 @@
+{% extends "restaurante/base.html" %}
+{% block content %}
+<h2>Agregar Persona</h2>
+<form method="post">
+    {% csrf_token %}
+    Nombre: <input type="text" name="nombre"><br>
+    Apellido: <input type="text" name="apellido"><br>
+    Teléfono: <input type="text" name="telefono"><br>
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}
