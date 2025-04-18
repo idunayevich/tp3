@@ -46,8 +46,12 @@ python manage.py runserver
 - `/admin/` panel de administración (crear superusuario con  python manage.py createsuperuser)
 
 4.1 registrar persona
+
 4.2 registrar restaurante
+
 4.3 registrar una reserva
+
 4.4 buscar una persona
+
 4.5 verificar en admin lo realizado
 
